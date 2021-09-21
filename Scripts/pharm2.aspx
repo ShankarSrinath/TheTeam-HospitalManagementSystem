@@ -25,7 +25,7 @@
  
 
         .head{
-            background-color:yellow;
+            background-color:darkseagreen;
             padding:10px;
             text-align:center;
 
