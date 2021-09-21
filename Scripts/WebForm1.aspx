@@ -9,8 +9,32 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            Name
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Date of Birth<asp:TextBox ID="TextBox2" runat="server" MaxLength="10"></asp:TextBox>
+            (DD/MM/YYYY)<br />
+            <br />
+            Email<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Contact<asp:TextBox ID="TextBox4" runat="server" MaxLength="10"></asp:TextBox>
+            <br />
+            <br />
+            License ID<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Filename<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            License
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+            <br />
+            <br />
+            <br />
         </div>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="SIGNUP" />
     </form>
 </body>
 </html>

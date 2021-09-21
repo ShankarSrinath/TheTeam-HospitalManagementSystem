@@ -4,60 +4,56 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using MailKit;
-using System.IO;
 using MailKit.Net.Smtp;
-using System.Data.SqlClient;
+using MailKit;
 using MimeKit;
+using System.Data.SqlClient;
+
 namespace hospital1.Scripts
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class patientsignup : System.Web.UI.Page
     {
-    
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8848HFL7\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("insert into doc_signup(Name,email,contact,license,licensefile)values('"+TextBox1.Text+"','"+TextBox2.Text+ "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into pat_signup(Name,Dob,email,Gender,Mobile,Blood)values('"+TextBox1.Text+ "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DropDownList2.Text + "','" + TextBox5.Text + "','" + DropDownList1.Text + "')", con);
+            con.Open();
             MimeMessage message = new MimeMessage();
             string sentto = TextBox3.Text;
-            message.From.Add(new MailboxAddress("Shankar", "shar08042701@gmail.com"));
+            message.From.Add(new MailboxAddress("NISHA HOSPITALS", "shar08042701@gmail.com"));
             message.To.Add(MailboxAddress.Parse(sentto));
-            message.Subject = "Testing mail";
+            message.Subject = "User Registration successful";
             message.Body = new TextPart("plain")
             {
-                Text = @"Welcome to Nisha Hospitals
-                         Dr.'"+TextBox1.Text+ "'" 
-
-
+                Text = @"Welcome to Nisha hospitals
+                        NAME:"+TextBox1.Text+"" 
+                        
             };
-            con.Open();
             String gmail = "shar08042701@gmail.com";
             string pwd = "Harshitha";
             SmtpClient client = new SmtpClient();
             try
             {
+                cmd.ExecuteNonQuery();
                 client.Connect("smtp.gmail.com", 465, true);
                 client.Authenticate(gmail, pwd);
-                cmd.ExecuteNonQuery();
-                
                 client.Send(message);
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Doctor Registration successful')", true);
+                Response.Write("User  registered successfully");
             }
-            catch 
+            catch (Exception ex)
             {
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Error occured re register')", true);
+                Response.Write(ex.Message);
             }
             finally
             {
                 client.Disconnect(true);
                 client.Dispose();
             }
-            con.Close();
-
-
-
-
-
         }
     }
 }
