@@ -25,7 +25,7 @@
  
 
         .head{
-            background-color:cornflowerblue;
+            background-color:yellow;
             padding:10px;
             text-align:center;
 
