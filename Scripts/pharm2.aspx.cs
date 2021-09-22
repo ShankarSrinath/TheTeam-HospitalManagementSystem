@@ -25,6 +25,8 @@ namespace hospital1.Scripts
                     dt.Columns.Add("Total");
                     ViewState["Record"] = dt;
                     bindgrid();
+                    Label1.Visible = false;
+
                 }
             }
         }
@@ -43,7 +45,7 @@ namespace hospital1.Scripts
             dr = cmd.ExecuteReader();
             if(dr.Read())
             {
-
+                
                 string dname;
                 string price;
                 dname = dr["drug"].ToString();
@@ -54,6 +56,7 @@ namespace hospital1.Scripts
             }
             else
             {
+                Label1.Visible = true;
                 Label1.Text = "WRONG CODE";
                 TextBox3.Text = "";
             }

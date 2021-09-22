@@ -17,7 +17,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Pharmacy | Nisha Hospital</title>
-    <style type="text/css">
+
+    <link rel="stylesheet" href="../Content/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="Custom_Styling/Pharmacy_custom.css" />
+    <!------------- <style type="text/css">
         body{
             margin:0;
         }
@@ -93,53 +97,90 @@
             margin-top: 380px;
             left:37%;
         }
-
+        
  
 
       
-    </style>
+    </style>   -------------->
 </head>
 
  
 
 <body>
     <form id="form1" runat="server">
-            <div class="head">
+            <header>
                 <h1>Pharmacy</h1>
-            </div>
-        <br /><br />
+            </header>
+
+
         <div class="main-container">
-            <span class="field-titles">Name</span><asp:TextBox Class="field-textbox" ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            <span class="field-titles">Doctor Prescribed</span><asp:TextBox Class="field-textbox" ID="TextBox2" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            <span class="field-titles">Drug Code</span><asp:TextBox Class="field-textbox" ID="TextBox3" runat="server"></asp:TextBox>
-            <asp:Button Class="fetch-button" ID="Button1" runat="server" Text="Fetch" OnClick="Button1_Click" />
-            <br />
-            <br />
-            <span class="field-titles">Drug</span><asp:TextBox Class="field-textbox" ID="TextBox4" runat="server"></asp:TextBox>
-            <asp:Label class="label" ID="Label1" runat="server" Text="Label"></asp:Label>
-            <br />
-            <br />
-            <span class="field-titles">Price</span><asp:TextBox Class="field-textbox" ID="TextBox5" runat="server" Height="16px" style="margin-bottom: 0px"></asp:TextBox>
-            <br />
-            <br />
-            <span class="field-titles">Quantity</span><asp:TextBox Class="field-textbox" ID="TextBox6" runat="server" Height="16px"></asp:TextBox>
-            <br />
-            <br />
-            <span class="field-titles">Total</span><asp:TextBox Class="field-textbox" ID="TextBox8" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Button class="add-button" ID="Button2" runat="server" OnClick="Button2_Click" Text="Add" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button class="bill-button" ID="Button3" runat="server" OnClick="Button3_Click" Text="Bill" />
+
+
+            
+
+            <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Name</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox1" class="form-control ptbox" />
+                </div>
+            </div>
+
+            <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Prescribed by</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox2" class="form-control ptbox" />
+                </div>
+            </div>
+
+             <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Drug Code</label>
+                <div class="col-sm-10 fetch-grp">
+                    <asp:TextBox runat="server" type="text" id="TextBox3" class="form-control ptbox fetch-tb" />
+                    <asp:Button class="btn btn-primary float-right fetch-bt" ID="Button4" runat="server" Text="Fetch" OnClick="Button1_Click" />
+                </div>
+            </div>
+
+            <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Drug</label>
+                <div class="col-sm-10 drug-grp">
+                    <asp:TextBox runat="server" type="text" id="TextBox4" class="form-control ptbox drug-tb" />
+                    <asp:Label class="float-right fetch-bt" ID="Label1" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+
+
+            <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Price</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox5" class="form-control ptbox" />
+                </div>
+            </div>
+
+
+            <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Quantity</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox6" class="form-control ptbox" />
+                </div>
+            </div>
+
+            
+            <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Total</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox8" class="form-control ptbox" />
+                </div>
+            </div>
+
+            <div class="btns">
+             <asp:Button class="btn btn-primary bill-btn bill-btn-add" ID="Button2" runat="server" OnClick="Button2_Click" Text="Add" />
+             <asp:Button class="btn btn-primary bill-btn bill-btn-bill" ID="Button3" runat="server" OnClick="Button3_Click" Text="Bill" />
+            </div>
         </div>
 
  
 
-        <asp:GridView class="grid" ID="GridView1" runat="server" Font-Bold="True" ShowHeaderWhenEmpty="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" OnRowDeleting="GridView1_RowDeleting">
+        <asp:GridView class="grid" ID="GridView1" runat="server" Font-Bold="True" ShowHeaderWhenEmpty="false" BackColor="White" BorderColor="#0069d9" BorderStyle="None" BorderWidth="1px" CellPadding="4" OnRowDeleting="GridView1_RowDeleting">
             <Columns>
                 <asp:CommandField ButtonType="Button" ShowDeleteButton="True" />
             </Columns>
