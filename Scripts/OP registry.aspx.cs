@@ -14,6 +14,12 @@ namespace hospital1.Scripts
 
         }
 
+        /*protected void LetBox(Object sender, EventArgs e)
+        {
+
+        }*/
+
+        
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8848HFL7\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");

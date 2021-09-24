@@ -28,9 +28,34 @@
 
 <body>
     <form id="form1" runat="server">
-            <header>
-                <h1>Pharmacy</h1>
-            </header>
+
+
+        <header>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark header-thing">
+        <a class="navbar-brand" href="#"><strong class="logo">Nisha Hospital</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+            <div class="collapse navbar-collapse header-others" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OP registry.aspx">Outpatient Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link righthere" href="pharm2.aspx">Pharmacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Regular Patient</a>
+                </li>
+            </ul>
+        </div>
+            </div>
+        
+        </header>
 
 
         <div class="main-container">

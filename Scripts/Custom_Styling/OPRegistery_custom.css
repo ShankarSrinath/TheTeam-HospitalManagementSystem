@@ -1,7 +1,31 @@
 ﻿.main-container {
+    margin-top: 100px;
     margin-left: 20px;
     padding: 5px 5px 5px 5px;
     margin-left: 25px;
+}
+
+.header-thing{
+    background-color:black;
+    padding:15px 0px 15px 0px;
+}
+
+.header-others{
+    padding-left:20px;
+}
+
+.header-others ul li{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.logo{
+    font-size:x-large;
+    padding-left:12px;
+}
+
+.righthere {
+    background-color:rgb(14 14 14);
 }
 
 .p-each-div {
@@ -50,7 +74,7 @@ input::-webkit-inner-spin-button {
 }
 
 .btn-proceed {
-    margin-left: 380px;
+    margin-left: 425px;
 }
 
 .p-each-div {
@@ -67,4 +91,9 @@ input::-webkit-inner-spin-button {
 .consulting{
     display:flex;
     align-content:center;
+}
+
+.bgroup{
+    padding-top:10px;
+    padding-bottom:10px;
 }
