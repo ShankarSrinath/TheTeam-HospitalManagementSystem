@@ -55,7 +55,7 @@
              <div class="form-group row p-each-div">
                 <label runat="server" class="col-sm-2 col-form-label plabel">Drug Code</label>
                 <div class="col-sm-10 fetch-grp">
-                    <asp:TextBox runat="server" type="text" id="TextBox3" class="form-control ptbox fetch-tb" />
+                    <asp:TextBox runat="server" type="number" id="TextBox3" class="form-control ptbox fetch-tb" />
                     <asp:Button class="btn btn-primary float-right fetch-bt" ID="Button4" runat="server" Text="Fetch" OnClick="Button1_Click" />
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <div class="form-group row p-each-div">
                 <label runat="server" class="col-sm-2 col-form-label plabel">Price</label>
                 <div class="col-sm-10">
-                    <asp:TextBox runat="server" type="text" id="TextBox5" class="form-control ptbox" />
+                    <asp:TextBox runat="server" type="number" id="TextBox5" class="form-control ptbox" />
                 </div>
             </div>
 
@@ -80,7 +80,7 @@
             <div class="form-group row p-each-div">
                 <label runat="server" class="col-sm-2 col-form-label plabel">Quantity</label>
                 <div class="col-sm-10">
-                    <asp:TextBox runat="server" type="text" id="TextBox6" class="form-control ptbox" />
+                    <asp:TextBox runat="server" type="number" id="TextBox6" class="form-control ptbox" />
                 </div>
             </div>
 
@@ -88,7 +88,7 @@
             <div class="form-group row p-each-div">
                 <label runat="server" class="col-sm-2 col-form-label plabel">Total</label>
                 <div class="col-sm-10">
-                    <asp:TextBox runat="server" type="text" id="TextBox8" class="form-control ptbox" />
+                    <asp:TextBox runat="server" type="number" id="TextBox8" class="form-control ptbox" />
                 </div>
             </div>
 

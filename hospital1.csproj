@@ -192,6 +192,7 @@
     <Content Include="Scripts\adminlogin.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Custom_Styling\OPRegistery_custom.css" />
     <Content Include="Scripts\Custom_Styling\Pharmacy_custom.css" />
     <Content Include="Scripts\docsignup.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />

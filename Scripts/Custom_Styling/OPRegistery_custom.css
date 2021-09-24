@@ -1,0 +1,70 @@
+﻿.main-container {
+    margin-left: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 25px;
+}
+
+.p-each-div {
+    display: inline;
+    margin: 5px 0px 5px 15px;
+    width: 100%;
+}
+
+.ptbox {
+    width: 350px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.plabel {
+    width: 120px;
+}
+
+.fetch-grp {
+    display: flex;
+    vertical-align: auto;
+}
+
+.fetch-bt {
+    height: 38px;
+    margin-left: 20px;
+}
+
+.drug-grp {
+    display: flex;
+    align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    margin-left: 145px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.btn-proceed {
+    margin-left: 380px;
+}
+
+.p-each-div {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.dropdownsex {
+    border: 1px solid #ced4da;
+    text-align:left;
+    margin-left:15px;
+}
+
+.consulting{
+    display:flex;
+    align-content:center;
+}

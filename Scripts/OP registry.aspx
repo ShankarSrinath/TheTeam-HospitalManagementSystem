@@ -5,47 +5,88 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" href="../Content/css/bootstrap.css" />
+    <link rel="stylesheet" href="Custom_Styling/OPRegistery_custom.css"
+    
 </head>
 <body>
     <form id="form1" runat="server">
-        Name<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        Age<asp:TextBox ID="TextBox2" runat="server" MaxLength="2"></asp:TextBox>
-        <br />
-        <br />
-        Sex<asp:DropDownList ID="DropDownList1" runat="server">
-            <asp:ListItem>Male</asp:ListItem>
-            <asp:ListItem>Female</asp:ListItem>
-            <asp:ListItem>Others</asp:ListItem>
-        </asp:DropDownList>
-        <br />
-        <br />
-        Blood group<asp:DropDownList ID="DropDownList2" runat="server">
-            <asp:ListItem>A+</asp:ListItem>
-            <asp:ListItem>B+</asp:ListItem>
-            <asp:ListItem>A-</asp:ListItem>
-            <asp:ListItem>B-</asp:ListItem>
-            <asp:ListItem>AB+</asp:ListItem>
-            <asp:ListItem>AB-</asp:ListItem>
-            <asp:ListItem>O+</asp:ListItem>
-            <asp:ListItem>O-</asp:ListItem>
-            <asp:ListItem></asp:ListItem>
-        </asp:DropDownList>
-        <br />
-        <br />
-        Mobile<asp:TextBox ID="TextBox3" runat="server" MaxLength="10"></asp:TextBox>
-        <br />
-        <br />
-        Consulting Doctor<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        Consultation fees<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="REGISTER" />
+
+       <div class="main-container">
+
+
+           <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Name</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox1" class="form-control ptbox" />
+                </div>
+            </div>
+
+          <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Age</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="number" id="TextBox2" MaxLength="2" class="form-control ptbox" />
+                </div>
+            </div>
+
+
+           <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Sex</label>
+                <div class="col-sm-10">
+
+                   <asp:DropDownList class=" dropdownsex dropdown-toggle btn" ID="DropDownList1" runat="server">
+                    <asp:ListItem class="dropdown-item">Male</asp:ListItem>
+                    <asp:ListItem class="dropdown-item">Female</asp:ListItem>
+                    <asp:ListItem class="dropdown-item">Other</asp:ListItem>
+                </asp:DropDownList>
+                </div>
+            </div>
+
+
+           <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Blood Group</label>
+                <div class="col-sm-10">
+
+                   <asp:DropDownList class=" dropdownsex dropdown-toggle btn" ID="DropDownList2" runat="server">
+                    <asp:ListItem class="dropdown-item">A+</asp:ListItem>
+                       <asp:ListItem class="dropdown-item">O+</asp:ListItem>
+                      <asp:ListItem class="dropdown-item">B+</asp:ListItem>
+                       <asp:ListItem class="dropdown-item">AB+</asp:ListItem>
+                      <asp:ListItem class="dropdown-item">A-</asp:ListItem>
+                        <asp:ListItem class="dropdown-item">O-</asp:ListItem>
+                       <asp:ListItem class="dropdown-item">B-</asp:ListItem>
+                        <asp:ListItem class="dropdown-item">AB-</asp:ListItem>
+                        
+                </asp:DropDownList>
+                </div>
+            </div>
+        
+
+           <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Mobile</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="number" id="TextBox3" MaxLength="10" class="form-control ptbox" />
+                </div>
+            </div>
+
+
+           <div class="form-group row p-each-div consulting">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Consulting Doctor</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox4" class="form-control ptbox" />
+                </div>
+            </div>
+
+           <div class="form-group row p-each-div consulting">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Consultation<br />fees</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox5" class="form-control ptbox" />
+                </div>
+            </div>
+
+
+          <asp:Button class="btn btn-primary btn-proceed" ID="Button1" runat="server" OnClick="Button1_Click" Text="Proceed" />
+       </div>
     </form>
-    <p>
-        &nbsp;</p>
 </body>
 </html>
