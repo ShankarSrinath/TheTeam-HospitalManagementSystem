@@ -1,17 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pharm2.aspx.cs" Inherits="hospital1.Scripts.pharm2" %>
 
- 
-
- 
-
- 
-
 <!DOCTYPE html>
-
- 
-
- 
-
  
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -40,7 +29,7 @@
             <div class="collapse navbar-collapse header-others" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link">Home</a>
+                    <a class="nav-link" href="WebForms/Index.aspx">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="OP registry.aspx">Outpatient Register</a>

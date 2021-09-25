@@ -200,7 +200,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <Content Include="Scripts\Login.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\OP registry.aspx" />
     <Content Include="Scripts\patientsignup.aspx" />
@@ -212,6 +211,7 @@
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Index.aspx" />
     <Content Include="Scripts\WebForms\Menu.js" />
     <Content Include="Scripts\WebForms\MenuStandards.js" />
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
@@ -291,13 +291,6 @@
     <Compile Include="Scripts\docsignup.aspx.designer.cs">
       <DependentUpon>docsignup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Scripts\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Scripts\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Scripts\OP registry.aspx.cs">
       <DependentUpon>OP registry.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -346,6 +339,13 @@
     </Compile>
     <Compile Include="Scripts\WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\WebForms\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\WebForms\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
