@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="hospital1.Scripts.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doc_signup.aspx.cs" Inherits="hospital1.Scripts.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -13,7 +13,7 @@
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
             <br />
-            Date of Birth<asp:TextBox ID="TextBox2" runat="server" MaxLength="10"></asp:TextBox>
+            Date of Birth<asp:TextBox ID="TextBox2" runat="server" type="date"></asp:TextBox>
             (DD/MM/YYYY)<br />
             <br />
             Email<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
