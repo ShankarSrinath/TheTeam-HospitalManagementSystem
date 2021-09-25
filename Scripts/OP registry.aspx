@@ -111,7 +111,7 @@
             </div>
 
 
-          <asp:Button class="btn btn-primary btn-proceed" ID="Button1" runat="server" OnClick="Button1_Click" Text="Proceed" />
+          <asp:Button class="btn btn-warning btn-proceed" ID="Button1" runat="server" OnClick="Button1_Click" Text="Proceed" />
 
        </div>
     </form>

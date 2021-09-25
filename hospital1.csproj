@@ -192,6 +192,7 @@
     <Content Include="Scripts\adminlogin.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Custom_Styling\Index_custom.css" />
     <Content Include="Scripts\Custom_Styling\OPRegistery_custom.css" />
     <Content Include="Scripts\Custom_Styling\Pharmacy_custom.css" />
     <Content Include="Scripts\docsignup.aspx" />
@@ -199,6 +200,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\Login.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\OP registry.aspx" />
     <Content Include="Scripts\patientsignup.aspx" />
@@ -288,6 +290,13 @@
     </Compile>
     <Compile Include="Scripts\docsignup.aspx.designer.cs">
       <DependentUpon>docsignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Scripts\OP registry.aspx.cs">
       <DependentUpon>OP registry.aspx</DependentUpon>

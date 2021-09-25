@@ -1,0 +1,27 @@
+﻿body:not(header) {
+    background-color: rgba(255, 255, 255, 1.0);
+    background-image: url(https://nishahospital.com/assets/images/slider-2.jpg);
+}
+
+
+
+
+
+.header-thing {
+    background-color: rgb(230 177 27);
+    padding: 15px 0px 15px 0px;
+}
+
+.header-others {
+    padding-left: 20px;
+}
+
+    .header-others ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+.logo {
+    font-size: x-large;
+    padding-left: 12px;
+}

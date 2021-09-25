@@ -5,9 +5,9 @@
     margin-left: 25px;
 }
 
-.header-thing{
-    background-color:black;
-    padding:15px 0px 15px 0px;
+.header-thing {
+    background-color: rgb(230 177 27);
+    padding: 15px 0px 15px 0px;
 }
 
 .header-others{
@@ -25,7 +25,8 @@
 }
 
 .righthere {
-    background-color:rgb(14 14 14);
+    background-color: hsl(44deg 78% 49%);
+    border-radius: 5px;
 }
 
 .p-each-div {

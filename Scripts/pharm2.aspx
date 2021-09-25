@@ -57,7 +57,7 @@
         
         </header>
 
-
+        <div class="outer-container">
         <div class="main-container">
 
 
@@ -81,7 +81,7 @@
                 <label runat="server" class="col-sm-2 col-form-label plabel">Drug Code</label>
                 <div class="col-sm-10 fetch-grp">
                     <asp:TextBox runat="server" type="number" id="TextBox3" class="form-control ptbox fetch-tb" />
-                    <asp:Button class="btn btn-primary float-right fetch-bt" ID="Button4" runat="server" Text="Fetch" OnClick="Button1_Click" />
+                    <asp:Button class="btn btn-warning float-right fetch-bt" ID="Button4" runat="server" Text="Fetch" OnClick="Button1_Click" />
                 </div>
             </div>
 
@@ -118,13 +118,13 @@
             </div>
 
             <div class="btns">
-             <asp:Button class="btn btn-primary bill-btn bill-btn-add" ID="Button2" runat="server" OnClick="Button2_Click" Text="Add" />
-             <asp:Button class="btn btn-primary bill-btn bill-btn-bill" ID="Button3" runat="server" OnClick="Button3_Click" Text="Bill" />
+             <asp:Button class="btn bill-btn bill-btn-add btn-warning" ID="Button2" runat="server" OnClick="Button2_Click" Text="Add" />
+             <asp:Button class="btn btn-warning bill-btn bill-btn-bill" ID="Button3" runat="server" OnClick="Button3_Click" Text="Bill" />
             </div>
         </div>
 
  
-
+        <div class="grid">
         <asp:GridView class="grid" ID="GridView1" runat="server" Font-Bold="True" ShowHeaderWhenEmpty="false" BackColor="White" BorderColor="#0069d9" BorderStyle="None" BorderWidth="1px" CellPadding="4" OnRowDeleting="GridView1_RowDeleting">
             <Columns>
                 <asp:CommandField ButtonType="Button" ShowDeleteButton="True" />
@@ -139,6 +139,9 @@
             <SortedDescendingCellStyle BackColor="#D6DFDF" />
             <SortedDescendingHeaderStyle BackColor="#002876" />
         </asp:GridView>
+        </div>
+            </div>
+
  
     </form>
 </body>
