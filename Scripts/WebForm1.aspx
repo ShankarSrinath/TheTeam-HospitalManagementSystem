@@ -13,7 +13,7 @@
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
             <br />
-            Date of Birth<asp:TextBox ID="TextBox2" runat="server" MaxLength="10"></asp:TextBox>
+            Date of Birth<asp:TextBox ID="TextBox2" runat="server" type="date"></asp:TextBox>
             (DD/MM/YYYY)<br />
             <br />
             Email<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
@@ -25,12 +25,11 @@
             License ID<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
             <br />
             <br />
-            Filename<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            File name<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
             <br />
             <br />
-            License
+            <br />
             <asp:FileUpload ID="FileUpload1" runat="server" />
-            <br />
             <br />
             <br />
         </div>
