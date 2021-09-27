@@ -21,7 +21,7 @@ namespace hospital1.Scripts
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8848HFL7\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("insert into pat_signup(Name,Dob,email,Gender,Mobile,Blood)values('"+TextBox1.Text+ "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DropDownList2.Text + "','" + TextBox5.Text + "','" + DropDownList1.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into pat_signup(Name,Dob,email,Gender,Mobile,Blood,pwd)values('"+TextBox1.Text+ "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DropDownList2.Text + "','" + TextBox5.Text + "','" + DropDownList1.Text + "','" + TextBox2.Text + "')", con);
             con.Open();
             MimeMessage message = new MimeMessage();
             string sentto = TextBox3.Text;
@@ -39,21 +39,27 @@ namespace hospital1.Scripts
             SmtpClient client = new SmtpClient();
             try
             {
-                cmd.ExecuteNonQuery();
+                
                 client.Connect("smtp.gmail.com", 465, true);
                 client.Authenticate(gmail, pwd);
                 client.Send(message);
-                Response.Write("User  registered successfully");
+                cmd.ExecuteNonQuery();
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('USER Registration successful')", true);
             }
             catch (Exception ex)
             {
-                Response.Write(ex.Message);
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Error occured please Reregister')", true);
             }
             finally
             {
                 client.Disconnect(true);
                 client.Dispose();
             }
+            con.Close();
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox5.Text = "";
         }
     }
 }

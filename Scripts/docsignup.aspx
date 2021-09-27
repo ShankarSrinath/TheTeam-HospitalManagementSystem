@@ -15,6 +15,7 @@
                 </Items>
             </asp:Menu>
         </div>
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     </form>
 </body>
 </html>

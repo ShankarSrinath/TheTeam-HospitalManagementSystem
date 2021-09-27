@@ -17,7 +17,7 @@ namespace hospital1.Scripts
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8848HFL7\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("insert into doc_signup(Name,email,contact,license,dob,licensefile)values('"+TextBox1.Text+"','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox6.Text + "','" + TextBox2.Text + "','" + TextBox7.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into doc_signup(Name,email,contact,license,dob,licensefile,password)values('"+TextBox1.Text+"','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox6.Text + "','" + TextBox2.Text + "','" + TextBox7.Text + "','" + TextBox2.Text + "')", con);
             
             con.Open();
             String gmail = "shar08042701@gmail.com";
