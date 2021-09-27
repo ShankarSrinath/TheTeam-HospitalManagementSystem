@@ -42,8 +42,9 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-            <asp:Button ID="btnlogin" runat="server" BackColor="Black" BorderStyle="Double" Font-Bold="True" ForeColor="White" Height="30px" Text="Login" Width="150px" />
+            <asp:Button ID="btnlogin" runat="server" BackColor="Black" BorderStyle="Double" Font-Bold="True" ForeColor="White" Height="30px" Text="Login" Width="150px" OnClick="btnlogin_Click" />
             <br />
+            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Scripts/WebForm3.aspx">LinkButton</asp:LinkButton>
             <br />
             </div>
         </div>
