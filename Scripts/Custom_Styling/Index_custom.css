@@ -1,5 +1,10 @@
-﻿.header-thing {
-    background-color: rgb(230 177 27);
+﻿body:not(form) {
+    background-image: url(https://nishahospital.com/assets/images/slider-4.jpg);
+    background-size:1500px;
+}
+
+.header-thing {
+    background-color: #9b7e6c;
     padding: 15px 0px 15px 0px;
 }
 
@@ -17,8 +22,50 @@
     padding-left: 12px;
 }
 
+ul{
+    list-style:none;
+    padding-left:50px;
+}
+
+.nav-item{
+    text-decoration:none;
+    font-size:60px;
+    color:white;
+    padding:20px 20px 20px 20px;
+}
+
+   /* .nav-item:hover {
+        color: black;
+        background-color:white;
+
+    }*/
+
+    .nav-item:hover:not(a){
+        opacity:0.5;
+    }
 
 
 .main-container {
     margin-top:100px;
+}
+
+.first-row-one, .second-row-one{
+    font-size:200px;
+}
+
+
+.nav-item:hover {
+    background-size: inherit;
+    background-color: white;
+    color: black;
+    text-shadow: 2px 2px 3px #817060;
+}
+
+ul li, ul li .nav-item:hover{
+    padding:20px 20px 20px 20px;
+    align-items:center;
+    text-align:left;
+    border-radius:20px;
+    font-weight:bold;
+
 }

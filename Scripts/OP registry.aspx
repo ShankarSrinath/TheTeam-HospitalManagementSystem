@@ -33,6 +33,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Regular Patient</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Doctor Scheduling.aspx">Doctor Scheduling</a>
+                </li>
             </ul>
         </div>
             </div>

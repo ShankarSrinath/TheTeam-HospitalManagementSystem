@@ -1,4 +1,4 @@
-﻿body{
+﻿body {
     background-color: rgb(175 174 45 / 34%);
 }
 
@@ -14,23 +14,33 @@
     padding: 15px 0px 15px 0px;
 }
 
-.header-others{
-    padding-left:20px;
+.header-others {
+    padding-left: 20px;
 }
 
-.header-others ul li{
-    padding-left:5px;
-    padding-right:5px;
+    .header-others ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+.nav-link {
+    color: rgb(255 255 255 / 0.92);
 }
 
-.logo{
-    font-size:x-large;
-    padding-left:12px;
+.logo {
+    font-size: x-large;
+    padding-left: 12px;
 }
 
 .righthere {
     background-color: hsl(44deg 78% 49%);
     border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .p-each-div {
@@ -64,12 +74,6 @@
     align-items: center;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 .btns {
     display: flex;
     align-items: center;
@@ -78,8 +82,13 @@ input::-webkit-inner-spin-button {
     padding-bottom: 15px;
 }
 
-.btn-proceed {
-    margin-left: 425px;
+.bill-btn {
+    margin-left: 20px;
+}
+
+.bill-btn-bill {
+    margin-left: 242px;
+    padding: 6px 15px 6px 15px;
 }
 
 .p-each-div {
@@ -87,19 +96,26 @@ input::-webkit-inner-spin-button {
     flex-direction: row;
 }
 
-.dropdownsex {
-    border: 1px solid #ced4da;
-    text-align:left;
-    margin-left:15px;
-    background-color:white;
+.grid {
+    margin-left: 220px;
 }
 
-.consulting{
-    display:flex;
+.outer-container {
+    display: inline-flex;
+}
+
+.dsdate{
+    width: 180px;
+}
+
+.datetime{
+    display:inline-flex;
+    align-items:center;
     align-content:center;
+    vertical-align:central;
 }
 
-.bgroup{
-    padding-top:10px;
-    padding-bottom:10px;
+.hyphen{
+    padding-bottom:20px;
+    padding-left:10px;
 }
