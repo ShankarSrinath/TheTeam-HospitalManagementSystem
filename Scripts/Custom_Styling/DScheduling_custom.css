@@ -86,6 +86,11 @@ input::-webkit-inner-spin-button {
     margin-left: 20px;
 }
 
+    .bill-btn:hover {
+        color:black;
+        background-color: #ffd800;
+    }
+
 .bill-btn-bill {
     margin-left: 242px;
     padding: 6px 15px 6px 15px;

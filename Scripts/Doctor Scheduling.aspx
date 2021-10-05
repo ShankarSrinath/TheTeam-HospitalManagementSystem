@@ -55,6 +55,13 @@
             </div>
 
             <div class="form-group row p-each-div">
+                <label runat="server" class="col-sm-2 col-form-label plabel">Doctor ID</label>
+                <div class="col-sm-10">
+                    <asp:TextBox runat="server" type="text" id="TextBox5" class="form-control ptbox" />
+                </div>
+            </div>
+
+            <div class="form-group row p-each-div">
                 <label runat="server" class="col-sm-2 col-form-label plabel">Available at </label>
                 <div class="col-sm-10 datetime">
                     <asp:TextBox runat="server" type="date" id="TextBox2" placeholder="" class="form-control ptbox dsdate" />
@@ -63,6 +70,10 @@
                     <asp:Label runat="server" Text="to" class="hyphen"> </asp:Label>
                     <asp:TextBox runat="server" type="time" id="TextBox4" placeholder="" class="form-control ptbox dsdate" />
                 </div>
+            </div>
+
+            <div class="btns">
+             <asp:Button class="btn bill-btn bill-btn-add btn-warning" ID="Button2" runat="server" Text="Update" />
             </div>
 
             </div>
