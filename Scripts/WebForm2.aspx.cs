@@ -12,7 +12,7 @@ namespace hospital1.Scripts
         {
             string user = txtdoctorid.Text;
             string pwd = txtpassword.Text;
-            if (user=="doc" && pwd=="1234")
+            if (user == "doc" && pwd == "1234")
             {
                 Response.Write("SUCCESS");
             }
@@ -21,7 +21,5 @@ namespace hospital1.Scripts
                 Response.Write("Reenterrr");
             }
         }
-
-        
     }
 }

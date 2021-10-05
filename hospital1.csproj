@@ -167,8 +167,8 @@
     <Content Include="Scripts\patientsignup.aspx" />
     <Content Include="Scripts\pharm2.aspx" />
     <Content Include="Scripts\doc_signup.aspx" />
+    <Content Include="Scripts\regular_registry.aspx" />
     <Content Include="Scripts\WebForm2.aspx" />
-    <Content Include="Scripts\WebForm3.aspx" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -279,19 +279,19 @@
     <Compile Include="Scripts\doc_signup.aspx.designer.cs">
       <DependentUpon>doc_signup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Scripts\regular_registry.aspx.cs">
+      <DependentUpon>regular_registry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\regular_registry.aspx.designer.cs">
+      <DependentUpon>regular_registry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Scripts\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Scripts\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Scripts\WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Scripts\WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
