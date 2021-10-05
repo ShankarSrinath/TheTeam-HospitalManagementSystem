@@ -64,6 +64,7 @@
                 <div class="col-sm-10">
 
                    <asp:DropDownList class=" dropdownsex dropdown-toggle btn" ID="DropDownList1" runat="server">
+                    <asp:ListItem class="dropdown-item">--Select--</asp:ListItem>
                     <asp:ListItem class="dropdown-item">Male</asp:ListItem>
                     <asp:ListItem class="dropdown-item">Female</asp:ListItem>
                     <asp:ListItem class="dropdown-item">Other</asp:ListItem>
@@ -77,6 +78,7 @@
                 <div class="col-sm-10">
 
                    <asp:DropDownList class=" dropdownsex dropdown-toggle btn" ID="DropDownList2" runat="server">
+                    <asp:ListItem class="dropdown-item">--Select--</asp:ListItem>
                     <asp:ListItem class="dropdown-item">A+</asp:ListItem>
                        <asp:ListItem class="dropdown-item">O+</asp:ListItem>
                       <asp:ListItem class="dropdown-item">B+</asp:ListItem>
