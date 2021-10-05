@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse header-others" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="WebForms/Index.aspx">Home</a>
+                    <a class="nav-link" href="Index.aspx">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="OP registry.aspx">Outpatient Register</a>
@@ -39,6 +39,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Regular Patient</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Doctor Scheduling.aspx">Doctor Scheduling</a>
                 </li>
             </ul>
         </div>
