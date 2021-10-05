@@ -10,10 +10,10 @@
     <form id="form1" runat="server">
         <div>
         </div>
-        <asp:FileUpload ID="FileUpload1" runat="server" />
         <p>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-        </p>
+            &nbsp;</p>
     </form>
+    <p>
+        ENTER&nbsp; THE OTP</p>
 </body>
 </html>
