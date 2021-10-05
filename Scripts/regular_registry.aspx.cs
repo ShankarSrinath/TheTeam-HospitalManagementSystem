@@ -13,10 +13,6 @@ namespace hospital1.Scripts
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Visible = false;
-            Label2.Visible = false;
-            Label3.Visible = false;
-            Label4.Visible = false;
         }
 
         protected void Button2_Click(object sender, EventArgs e)
