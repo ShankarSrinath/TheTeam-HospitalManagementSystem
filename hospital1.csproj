@@ -197,7 +197,7 @@
     <Content Include="Scripts\Custom_Styling\OPRegistery_custom.css" />
     <Content Include="Scripts\Custom_Styling\Pharmacy_custom.css" />
     <Content Include="Scripts\docsignup.aspx" />
-    <Content Include="Scripts\Doctor Scheduling.aspx" />
+    <Content Include="Scripts\Doctor_Scheduling.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -294,12 +294,12 @@
     <Compile Include="Scripts\docsignup.aspx.designer.cs">
       <DependentUpon>docsignup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Scripts\Doctor Scheduling.aspx.cs">
-      <DependentUpon>Doctor Scheduling.aspx</DependentUpon>
+    <Compile Include="Scripts\Doctor_Scheduling.aspx.cs">
+      <DependentUpon>Doctor_Scheduling.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Scripts\Doctor Scheduling.aspx.designer.cs">
-      <DependentUpon>Doctor Scheduling.aspx</DependentUpon>
+    <Compile Include="Scripts\Doctor_Scheduling.aspx.designer.cs">
+      <DependentUpon>Doctor_Scheduling.aspx</DependentUpon>
     </Compile>
     <Compile Include="Scripts\LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
