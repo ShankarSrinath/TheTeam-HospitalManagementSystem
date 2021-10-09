@@ -31,6 +31,7 @@ namespace hospital1.Scripts
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
+            GridView1.Visible = true;
             if(e.Row.RowType==DataControlRowType.DataRow)
             {
                 e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(GridView1, "Select$" + e.Row.RowIndex);
@@ -51,7 +52,10 @@ namespace hospital1.Scripts
                     pmail = row.Cells[1].Text;
                     pgen = row.Cells[2].Text;
                     pbl = row.Cells[3].Text;
-                    TextBox4.Text=pgen;
+                    TextBox4.Text=pname;
+                    TextBox5.Text = pmail;
+                    TextBox6.Text = pgen;
+                    TextBox7.Text = pbl;
                 }
                 else
                 {
@@ -60,6 +64,39 @@ namespace hospital1.Scripts
                 }
             }
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8848HFL7\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
+            string query = "insert into regular_registry(Name,Patientid,Blood, Gender,fees,date_of_visit,doctor)values('" + TextBox4.Text + "', '" + TextBox5.Text + "', '" + TextBox7.Text + "','" + TextBox6.Text + "', '" + TextBox3.Text + "',getdate(), '" + TextBox2.Text + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('ENTRY REGISTERED SUCCESSFULLY')", true);
+                con.Close();
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
+                TextBox5.Text = "";
+                TextBox6.Text = "";
+                TextBox7.Text = "";
+                GridView1.Visible = false;
+            }
+            catch
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('ERROR IN ENTRIES.RE REGISTER')", true);
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
+                TextBox5.Text = "";
+                TextBox6.Text = "";
+                TextBox7.Text = "";
+            }
         }
     }
 }

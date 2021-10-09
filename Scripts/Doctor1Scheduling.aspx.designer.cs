@@ -11,7 +11,7 @@ namespace hospital1.Scripts
 {
 
 
-    public partial class Doctor_Scheduling
+    public partial class Doctor1Scheduling
     {
 
         /// <summary>

@@ -11,28 +11,33 @@
         <div>
             <br />
             <br />
-            <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+            PATIENT NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            EMAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            GENDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+            BLOOD GROUP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
             <br />
-            Referring Doctor<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <br />
+            REFERRING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <br />
-            Consulting Fees<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            DOCTOR<br />
+            <br />
+            Consulting Fees&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </div>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="REGISTER" />
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" Text="REGISTER" OnClick="Button1_Click" />
         <p>
-            Patient ID</p>
+            SEARCH BY PATIENT NAME</p>
         <p>
             <asp:TextBox ID="TextBox1" runat="server" ></asp:TextBox>
         </p>

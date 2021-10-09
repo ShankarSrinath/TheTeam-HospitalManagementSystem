@@ -157,6 +157,7 @@
     <Content Include="Scripts\adminlogin.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\docsched.aspx" />
     <Content Include="Scripts\docsignup.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="Scripts\adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\docsched.aspx.cs">
+      <DependentUpon>docsched.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\docsched.aspx.designer.cs">
+      <DependentUpon>docsched.aspx</DependentUpon>
     </Compile>
     <Compile Include="Scripts\docsignup.aspx.cs">
       <DependentUpon>docsignup.aspx</DependentUpon>

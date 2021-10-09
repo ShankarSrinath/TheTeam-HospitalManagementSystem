@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace hospital1.Scripts
 {
-    public partial class Doctor_Scheduling : System.Web.UI.Page
+    public partial class Doctor1Scheduling : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
