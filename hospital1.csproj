@@ -159,6 +159,10 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docsched.aspx" />
     <Content Include="Scripts\docsignup.aspx" />
+<<<<<<< Updated upstream
+=======
+    <Content Include="Scripts\Doctor_Scheduling.aspx" />
+>>>>>>> Stashed changes
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -259,6 +263,23 @@
     <Compile Include="Scripts\docsignup.aspx.designer.cs">
       <DependentUpon>docsignup.aspx</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Scripts\Doctor_Scheduling.aspx.cs">
+      <DependentUpon>Doctor_Scheduling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\Doctor_Scheduling.aspx.designer.cs">
+      <DependentUpon>Doctor_Scheduling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+>>>>>>> Stashed changes
     <Compile Include="Scripts\OP registry.aspx.cs">
       <DependentUpon>OP registry.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
